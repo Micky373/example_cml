@@ -13,6 +13,7 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
         run: |
           pip install -r requirements.txt
+          dvc pull    
           python train.py
 
           cat metrics.txt >> report.md
