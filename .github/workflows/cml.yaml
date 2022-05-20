@@ -13,6 +13,7 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
         run: |
           pip install -r requirements.txt
+          pip install 'dvc[gdrive]'
           dvc pull    
           python train.py
 
