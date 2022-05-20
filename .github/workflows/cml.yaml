@@ -17,6 +17,10 @@ jobs:
           dvc pull --run-cache    
           python train.py
 
+          git fetch --prune
+          dvc diff --show-md master >> report.md
+
+          echo "## Result of the model"
           cat metrics.txt >> report.md
           cml publish confusion_matrix.png --md >> report.md
           cml send-comment report.md
