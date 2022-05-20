@@ -1,0 +1,1 @@
+dvc remote modify --local myremotegdrive_service_account_json_file_path /file.json
