@@ -4,4 +4,4 @@
 ['remote "my_remote"']
     url = gdrive://12zBQY_MPjHecqZkqWWuXDro1LVbx4pAW
     gdrive_use_service_account = true
-    gdrive_service_account_json_file_path = /file.json
+    gdrive_service_account_json_file_path = https://github.com/Micky373/example_cml/blob/exp/.dvc/file.json
